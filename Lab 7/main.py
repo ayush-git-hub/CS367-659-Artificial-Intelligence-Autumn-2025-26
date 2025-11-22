@@ -412,22 +412,3 @@ if __name__ == "__main__":
     plt.tight_layout()
     plt.savefig('lab7_results.png', dpi=150, bbox_inches='tight')
     plt.show()
-    
-    print("\n" + "=" * 70)
-    print("CONCLUSIONS:")
-    print("=" * 70)
-    print("""
-Problem 1 (MENACE): 
-  - Successfully learns to play Tic-Tac-Toe through reinforcement
-  - Key: Symmetry reduction, bead-based probability, +3/-1 reinforcement
-  
-Problem 2 (Binary Bandit):
-  - Epsilon-greedy correctly identifies the better action in both bandits
-  - Balances exploration (ε=10%) with exploitation (90% greedy)
-  
-Problems 3&4 (Non-stationary Bandit):
-  - Standard sample averaging FAILS for non-stationary rewards
-  - Modified algorithm with constant α=0.1 TRACKS changing rewards
-  - Constant step-size gives exponential recency-weighted average
-  - Recent rewards weighted more heavily, enabling adaptation
-    """)
